@@ -806,6 +806,8 @@ RenderDevice::RenderDevice(
 
     ValidateWindowSettings(windowSettings_);
     InitializeWindow();
+    return;
+
     InitializeFactory();
     InitializeDevice();
     InitializeCaps();

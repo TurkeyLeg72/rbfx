@@ -222,6 +222,8 @@ void SampleSelectionScreen::Deactivate()
 
 void SamplesManager::Start()
 {
+    return;
+
     ResourceCache* cache = context_->GetSubsystem<ResourceCache>();
     VirtualFileSystem* vfs = context_->GetSubsystem<VirtualFileSystem>();
     vfs->SetWatching(true);

@@ -42,6 +42,7 @@
 #include "../Graphics/GraphicsEvents.h"
 #include "../Graphics/Texture2D.h"
 #include "../RenderAPI/PipelineState.h"
+#include "../RenderAPI/GAPIIncludes.h"
 #include "../RenderAPI/RenderAPIUtils.h"
 #include "../RenderAPI/RenderDevice.h"
 #include "../Resource/JSONArchive.h"
@@ -530,11 +531,13 @@ bool Engine::Initialize(const StringVariantMap& applicationParameters, const Str
         if (GetParameter(EP_WINDOW_MAXIMIZE).GetBool())
             graphics->Maximize();
 
+#if 0
         graphics->InitializePipelineStateCache(FileIdentifier::FromUri(GetParameter(EP_PSO_CACHE).GetString()));
 
         renderer->SetTextureQuality((MaterialQuality)GetParameter(EP_TEXTURE_QUALITY).GetInt());
         renderer->SetTextureFilterMode((TextureFilterMode)GetParameter(EP_TEXTURE_FILTER_MODE).GetInt());
         renderer->SetTextureAnisotropy(GetParameter(EP_TEXTURE_ANISOTROPY).GetInt());
+#endif
 
         if (GetParameter(EP_SOUND).GetBool())
         {
@@ -546,7 +549,7 @@ bool Engine::Initialize(const StringVariantMap& applicationParameters, const Str
             );
         }
 
-#ifdef URHO3D_RMLUI
+#if 0
         const auto rmlUi = GetSubsystem<RmlUI>();
 
         const bool loadFonts = GetParameter(EP_LOAD_FONTS).GetBool();
@@ -577,7 +580,7 @@ bool Engine::Initialize(const StringVariantMap& applicationParameters, const Str
 
     if (!headless_)
     {
-#ifdef URHO3D_SYSTEMUI
+#if 0
         context_->RegisterSubsystem(new SystemUI(context_,
             GetParameter(EP_SYSTEMUI_FLAGS).GetUInt()));
         RegisterStandardSerializableHooks(context_);
@@ -667,6 +670,12 @@ void Engine::InitializeVirtualFileSystem(bool enableResourceRootFile)
 
 void Engine::RunFrame()
 {
+    //glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
+    glClearColor(0.0f, 0.5f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    SDL_GL_SwapWindow(SDL_GL_GetCurrentWindow());
+    return;
+
     URHO3D_PROFILE("RunFrame");
     {
         assert(initialized_);

@@ -169,7 +169,7 @@ bool Graphics::SetScreenMode(const WindowSettings& windowSettings)
             return false;
         }
 
-        renderDevice_->PostInitialize();
+        // renderDevice_->PostInitialize();
 
         renderDevice_->OnDeviceLost.Subscribe(this, [this]() { SendEvent(E_DEVICELOST); });
         renderDevice_->OnDeviceRestored.Subscribe(this, [this]() { SendEvent(E_DEVICERESET); });
@@ -187,12 +187,14 @@ bool Graphics::SetScreenMode(const WindowSettings& windowSettings)
     SetWindowIcon(windowIcon_);
 
     // Clear the initial window contents to black
+    #if 0
     RenderContext* renderContext = renderDevice_->GetRenderContext();
     renderContext->SetSwapChainRenderTargets();
     renderContext->ClearRenderTarget(0, Color::BLACK);
     renderDevice_->Present();
 
     OnScreenModeChanged();
+    #endif
     return true;
 }
 
