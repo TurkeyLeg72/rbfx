@@ -490,6 +490,8 @@ TextureFormat SelectDefaultDepthFormat(Diligent::IRenderDevice* device, bool nee
 }
 
 #if GL_SUPPORTED || GLES_SUPPORTED
+GLuint defaultFbo{};
+
 class ProxySwapChainGL : public Diligent::SwapChainBase<Diligent::ISwapChainGL>
 {
 public:
@@ -546,7 +548,7 @@ private:
         // Get default framebuffer for iOS platforms
         const PlatformId platform = GetPlatform();
         if (platform == PlatformId::iOS || platform == PlatformId::tvOS)
-            glGetIntegerv(GL_FRAMEBUFFER_BINDING, reinterpret_cast<GLint*>(&defaultFBO_));
+            defaultFBO_ = defaultFbo;
 
         // Get swap chain parameters
         int width{};
@@ -834,6 +836,10 @@ void RenderDevice::InitializeWindow()
     {
         window_ = CreateOpenGLWindow(
             IsOpenGLESBackend(deviceSettings_.backend_), windowSettings_, deviceSettings_.externalWindowHandle_);
+
+        const PlatformId platform = GetPlatform();
+        if (platform == PlatformId::iOS || platform == PlatformId::tvOS)
+            glGetIntegerv(GL_FRAMEBUFFER_BINDING, reinterpret_cast<GLint*>(&defaultFbo));
 
         glContext_ = CreateGLContext(window_.get());
         if (!glContext_)
